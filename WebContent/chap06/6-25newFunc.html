@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	function Student(name, kor, math, eng, sci) {
+		this.name = name;
+		this.kor = kor;
+		this.math = math;
+		this.eng = eng;
+		this.sci = sci;
+		
+		this.getSum = function() {
+			return this.kor + this.math + this.eng + this.sci;
+		};
+		
+		this.getAverage = function() {
+			return this.getSum() /4;
+		};
+		
+		this.toString = function() {
+			return this.name + '\t' + this.getSum() + '\t' + this.getAverage();
+		};
+	}
+	
+	var students = new Student('zzuggumi',44,66,88,30);
+	
+	var output = 'name\tTotal\tAverage\n';
+	for(var i in students) {
+		output += students[i].toString() + '\n';
+	} 
+	
+	alert(output);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

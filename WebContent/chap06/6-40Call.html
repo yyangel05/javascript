@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	function Square(length) {
+		Rectangle.call(this, length, length);
+	}
+	
+	Square.prototype = new Rectangle();
+	Square.prototype.constructor = Square;
+	
+	var square = new Square(4);
+	alert(square.getArea());
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

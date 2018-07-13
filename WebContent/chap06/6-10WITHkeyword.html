@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	var output = '';
+	var student = {
+		name : 'zzuggumi',
+		kor : 55, math: 100,
+		eng: 20, sci : 99
+	};
+	
+	var output ='';
+	with(student) {
+		output += 'name: ' + name + '\n'; //student.name 
+		output += 'kor: ' + kor + '\n';
+		output += 'math: ' + math + '\n';
+		output += 'eng: ' + eng + '\n';
+		output += 'sci: ' + sci + '\n';
+
+		output += 'total: ' + (kor + math + eng + sci);
+	}
+	
+	alert(output);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	alert(52 > 382);
+	alert(52 < 382);
+	
+	alert(true > false); /* 참은 1이고 거짓은 0이어서 결과는 true */
+	
+	/* 조건문 괄호 안에 불린 표현식이 참이면 중괄호 속 문장 실행. 거짓이면 무시 */
+	if(52 < 382) { /* 참이어서 실행됨. */
+		alert("382는 52보다 큽니다")
+	}
+	if(52 > 382) { /* 거짓이어서 실행되지않음 */
+		alert("382는 52보다 작습니다")
+	}
+	
+	/* 논리부정연산자 */
+	alert(!true); /* 결과는 false */
+	alert(!false);/* 결과는 true */
+	
+	/* 잘못된 비교연산자 */
+	alert("잘못된 비교연산자");
+	alert(30 > 20 > 10); /* 결과는 false */
+	alert(30 > 20 && 20 > 10); /* 결과는 true */
+	
+	/*일치 연산자를 잘못 사용했을 때 결과는 모두 true*/
+	alert("일치연산자 잘못 사용한 예. 결과는 모두 true");
+	alert('' == false);
+	alert('' == 0);
+	alert(0 == false);
+	alert('273' == 273);
+	
+
+	/*일치 연산자를 잘 사용했을 때 결과는 모두 false*/
+	alert("일치연산자 잘 사용한 예. 결과는 모두 false");
+	alert('' === false);
+	alert('' === 0);
+	alert(0 === false);
+	alert('273' === 273);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+	function callFunctionTemTimes(otherFunction) {
+		for(var i=0; i<10; i++) {
+			otherFunction(); //callFunctionTemTimes의 내부에 alert함수가 실행된다.
+		}
+	}
+	
+	function justFunction() {
+		alert('Hello World');
+	}
+	
+	callFunctionTemTimes(justFunction);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
