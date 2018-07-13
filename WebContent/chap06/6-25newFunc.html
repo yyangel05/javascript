@@ -23,9 +23,13 @@
 		};
 	}
 	
-	var students = new Student('zzuggumi',44,66,88,30);
+	//var students = new Student('zzuggumi',44,66,88,30);
 	
-	var output = 'name\tTotal\tAverage\n';
+	var students = [];
+	students.push(new Student('zzuggumi',44,66,88,30));
+	students.push(new Student('ggolddugi',24,36,18,30));
+	
+	var output = 'name \t Total \t Average \n';
 	for(var i in students) {
 		output += students[i].toString() + '\n';
 	} 
