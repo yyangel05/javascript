@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+
+	window.onload = function() {
+		//문서 객체를 가져온다
+		var header1 = document.getElementById('header_1');
+		var header2 = document.getElementById('header_2');
+		
+		//문서 객체의 속성 변경
+		header1.innerHTML = 'change Header1';
+		header2.innerHTML = 'change Header2';
+	}
+
+</script>
+
+</head>
+<body>
+
+<!-- getElementById(id) 태그의 id속성이 id와 일치하는 문서 객체를 가져온다 -->
+<!-- getElementById(id)는 한번에 한가지 문서객체만 가져올 수 있다. -->
+
+	<h1 id="header_1">Header1</h1>
+	<h1 id="header_2">Header2</h1>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+
+	window.onload = function() {
+		//변수 선언
+		var img = document.createElement('img');
+		//메서드를 사용해 속성을 지정한다.
+		img.setAttribute('src','Penguins.jpg');
+		img.setAttribute('width', 500);
+		img.setAttribute('height', 350);
+	
+		img.setAttribute('data-property', 350);
+		//노드 연결
+		document.body.appendChild(img);
+	};
+	
+</script>
+</head>
+<body>
+
+<!-- 텍스트 노드를 갖지않는 노드 생성 -->
+<!-- createElement(tagName) - 요소 노드를 생성합니다. 여기서는 텍스트 노드를 갖지않는 노드생성. 대표적으로 img태그-->
+<!-- appendChild(node) - 문서객체를 body문서 객체에 연결  -->
+</body>
+</html>

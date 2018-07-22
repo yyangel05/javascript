@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	//윈도우가 로드될 때
+	window.onload = function() {
+		alert("3초후 이 페이지는 종료~!");
+		
+		//3초 후에 함수를 실행한다
+		window.setTimeout(function() {
+			window.close();
+		}, 3000);
+	};
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

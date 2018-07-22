@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+
+	window.onload = function() {
+		//문서 객체를 가져온다
+		var willRemove = document.getElementById('will_remove');
+		
+		//문서 객체를 제거합니다
+		document.body.removeChild(willRemove);
+		
+		
+		//-->문서객체가 제거되기 전에는 remove header이라는 텍스트가 출력.
+		//-->문서객체를 제거하면 결과는 아무것도 출력되지 않는다. 
+	};
+
+</script>
+
+</head>
+<body>
+
+	<h1 id="will_remove">remove header</h1>
+</body>
+</html>

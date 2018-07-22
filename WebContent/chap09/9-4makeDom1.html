@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+
+	window.onload = function() {
+		var header = document.createElement('h1');
+		var textNode = document.createTextNode('Hello DOM');
+		
+		header.appendChild(textNode);
+		document.body.appendChild(header);
+	};
+	
+</script>
+</head>
+<body>
+
+<!-- 텍스트 노드를 갖는 h1태그를 생성하면서 문서 객체를 생성 -->
+<!-- createElement(tagName) - 요소 노드를 생성합니다 -->
+<!-- createTextNode(text) - 텍스트 노드를 생성합니다 -->
+<!-- appendChild(node) - 문서객체를 body문서 객체에 연결  -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Index</title>
+
+<script>
+	window.onload = function() {
+		//문서 객체를 가져온다
+		var headers = document.getElementsByTagName('h1');
+		//가져온 문서 객체의 내용을 변경한다
+		
+		//방법1
+		/*
+		headers[0].innerHTML = 'with getElementsByTagName header1'
+		headers[1].innerHTML = 'with getElementsByTagName header2' */
+		
+		//방법2
+		/* for(var i=0; i< headers.length; i++) {
+			headers[i].innerHTML = 'with getElementsByTagName header'+(i+1);
+		} */
+		
+		//방법3
+		var output='';
+		for(var i in headers) {
+			output += i +'\n';
+		}
+		alert(output);
+	};
+
+</script>
+
+</head>
+<body>
+<!-- 한번에 여러개의 문서객체를 가져오기 위한 방법 -->
+<!-- getElementByName(name) 태그의 name속성이 name과 일치하는 문서 객체를 배열로 가져온다 -->
+<!-- getElementByTagName(tagName)는 tagName과 일치하는 문서 객체를 배열로 가져온다. -->
+
+	<h1>9-12 Header1</h1>
+	<h1>9-12 Header2</h1>
+
+</body>
+</html>

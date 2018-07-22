@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	
+	var child = window.open('', '', 'width=300, height=200');
+	var width = screen.width; //스크린 가로크기로 변수선언 및 설정
+	var height = screen.height; //스크린 세로크기로 변수선언 및 설정
+	
+	child.moveTo(0,0); //윈도우 창 시작점
+	child.resizeTo(width, height); //윈도우 가로세로 크기 바꿈
+	
+	//2초마다 함수를 실행
+	setInterval(function () {
+		child.resizeBy(-20, -20);
+		child.moveBy(10, 10);
+	}, 2000);
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

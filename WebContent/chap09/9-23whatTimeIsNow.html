@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+
+	window.onload = function() {
+		//변수 선언
+		var clock = document.getElementById('clock');
+		
+		//1초마다 함수를 실행
+		setInterval(function() {
+			var now = new Date();
+			clock.innerHTML = now.toString();
+		}, 1000);
+		
+	};
+
+</script>
+
+</head>
+<body>
+
+<!-- 문서객체를 이용해 현재 시간을 표시하는  시계-->
+
+	<h1 id="clock"></h1>
+
+<!-- [결과화면] Fri Jul 20 2018 14:24:17 GMT+0900 (한국 표준시) . 정제하는방법도 있겠지?? --> 
+
+</body>
+</html>

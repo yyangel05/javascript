@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	
+	window.onload= function() {
+		//1초마다 함수를 실행한다
+		var intervalID = setInterval(function() {
+			document.body.innerHTML += '<p>' + new Date() + '</p>';
+		}, 1000);
+		
+		//10초 후 함수를 실행한다
+		setTimeout(function () {
+			//타이머를 종료합니다.
+			clearInterval(intervalID);
+			}, 10000);
+	}
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

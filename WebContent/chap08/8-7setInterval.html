@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+	
+	//변수 선언
+	var child = window.open('','','width=300, height=200');
+	
+	//윈도우창이 실행되는 위치를 moveTo(,)로 고정할 수 있다.
+	child.moveTo(0,0);
+	
+	//1초마다 함수를 실행한다
+	setInterval(function() {
+		child.moveBy(10,10);
+	},1000);
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
