@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script>
+		$(document).ready(function () {
+			setTimeout(function() {
+				//변수선언
+				var value=$('select > option:selected').val();
+				
+				//출력
+				alert(value);
+			}, 5000);
+		});
+	</script>
+</head>
+<body>
+
+	<div>
+		<select>
+			<option>Apple</option>
+			<option>Bag</option>
+			<option>Cat</option>
+			<option>Dog</option>
+			<option>Element</option>
+		</select>
+	</div>
+
+</body>
+</html>

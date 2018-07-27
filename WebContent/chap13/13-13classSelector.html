@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 태그의 class를 속성으로 갖는 문서 객체를 선택하는 선택자 -->
+	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.target').css('color', 'Orange');
+			$('h2.target').css('color', 'Purple');
+			$('.target.select').css('color', 'Blue');
+		});
+		
+		//class선택자는 .클래스이름으로 구분.
+		
+	</script>
+</head>
+<body>
+
+	<h1>Header-0</h1>
+	<h1 class="target">Header-1</h1>
+	<h1 class="target select">Header-2</h1>
+	<h2 class="target">Header-3</h2>
+
+</body>
+</html>	

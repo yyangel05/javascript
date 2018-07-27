@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+	* {
+	margin:5px; padding:5px;
+	border:3px solid Black;
+	}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+
+<script>
+	$(document).ready(function () {
+		$('a').click(function(event) {
+			$(this).css('background-color', 'Blue');
+			event.stopPropagation();
+			event.preventDefault();
+		});
+		
+		$('a').toggle(function(event) {
+			$(this).css('background-color', 'Blue');
+			event.stopPropagation();
+			event.preventDefault();
+		}, function(event) {
+			$(this).css('background-color', 'White');
+			event.stopPropagation();
+			event.preventDefault();
+		});
+		
+		
+/* 		$('h1').click(function() {
+			$(this).css('background-color', 'Red');
+		}); */
+		
+		$('h1').toggle(function() {
+			$(this).css('background-color', 'Red');
+		}, function() {
+			$(this).css('background-color', 'Green');
+		}, function() {
+			$(this).css('background-color', 'Orange');
+		});
+			
+	});
+</script>	
+
+	
+</head>
+<body>
+
+<h1><a href="http://www.naver.com">NAVER</a></h1>
+
+</body>
+</html>

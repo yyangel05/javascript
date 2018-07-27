@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script>
+		$(document).ready(function () {
+			
+			//변수선언
+			var array=[
+				{name : 'zzuggumi', link:'http://www.naver.com'},
+				{name : 'ggoddugi', link:'http://www.daum.net'},
+				{name : 'nakzi', link:'http://www.paran.com'},
+				{name : 'octo', link:'http://www.nate.com'}	
+			];
+			
+			//$.each() 메서드 사용
+			$.each(array, function (index, item) {
+				//변수 선언
+				var output = '';
+				
+				//문자열 만들기
+				output += '<a href="' + item.link + '">';
+				output += '	<h1>' + item.name + '</h1>';
+				output += '</a>';
+				
+				//집어넣기
+				document.body.innerHTML += output;
+			});
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

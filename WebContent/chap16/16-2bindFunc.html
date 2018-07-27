@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+
+<script>
+	$(document).ready(function () {
+		//이벤트 연결하기
+		$('h1').bind('click', function() {
+			$(this).html(function (index, html) {
+				return html + '+';
+			});
+		});
+	});
+</script>	
+
+	
+</head>
+<body>
+
+<h1>header-0</h1>
+<h1>header-1</h1>
+<h1>header-2</h1>
+
+</body>
+</html>

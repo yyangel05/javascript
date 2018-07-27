@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	div {
+	margin:10px;
+	border:3px Solid Black;
+	border-radius:10px;
+	float:left;
+	width:120px; height:120px;
+	text-align:center;
+	}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+
+<script>
+	//변수선언
+	var xml = '';
+	xml += '<friends>';
+	xml += '	<friend>';
+	xml += '		<name>쭈꾸미</name>';
+	xml += '		<language>English</language>';
+	xml += '	</friend>';
+	xml += '	<friend>';
+	xml += '		<name>꼴뚜기</name>';
+	xml += '		<language>Chinese</language>';
+	xml += '	</friend>';
+	xml += '	<friend>';
+	xml += '		<name>낙지</name>';
+	xml += '		<language>Korean</language>';
+	xml += '	</friend>';
+	xml += '</friends>';	
+	
+	
+	$(document).ready(function () {
+		//변수 선언
+		var xmlDoc = $.parseXML(xml);
+		
+		//find함수를 사용해 friend태그를 선택한다.
+		$(xmlDoc).find('friend').each(function (index) {
+			//변수 선언
+			var output = '';
+			output += '<div>';
+			output += '		<h1>' + $(this).find('name').text() + '</h1>';
+			output += '		<p>' + $(this).find('language').text() + '</p>';
+			output += '</div>';
+			
+			//출력합니다
+			document.body.innerHTML += output;
+		});
+	});
+</script>	
+
+	
+</head>
+<body>
+
+</body>
+</html>

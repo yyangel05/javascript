@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 태그의 id를 속성으로 갖는 문서 객체를 선택하는 선택자 -->
+	<script src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#target').css('color', 'Orange');
+			$('h2#target').css('color', 'Purple');
+		});
+		
+		//#target 아이디 선택자는 #id이름으로 선택자를 넣는다. 
+		//h2#target 태그선택자와 아이디선택자를 같이 사용하여 보여줌
+	</script>
+</head>
+<body>
+
+	<h1>Header-0</h1>
+	<h1 id="target">Header-1</h1>
+	<h1>Header-2</h1>
+	<h2 id="target">Header-2</h2>
+
+</body>
+</html>
